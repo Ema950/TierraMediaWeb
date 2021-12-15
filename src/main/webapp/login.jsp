@@ -1,19 +1,54 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>login</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
-<body>
-<h1>Bienvenido </h1>
-<form>
-	<label for="Nombre">Usuario</label>
-	<input type="text" id="Nombre"/><br>
-	<label for="Contraseña">Contraseña</label>
-	<input type="password" id="Contraseña"/><br>
-	<input type="submit" value="Enviar"/>
-</form>
+<style>
+body {
+	background: url(img/Inicio.jpg) center fixed no-repeat
+}
+</style>
+<body background="img/Inicio.jpg">
+	<div>
+		<main>
+			<h1>Bienvenido</h1>
+			<c:if test="${flash != null}">
+				<div>
+					<p>
+						<c:out value="${flash}" />
+					</p>
+				</div>
+			</c:if>
+			
+			<c:if test="${success != null}">
+				<div>
+					<p>
+						<c:out value="${success}" />
+					</p>
+				</div>
+			</c:if>
+
+			<form action="login" method="post">
+
+				<div class="mb-3">
+					<label for="username" class="form-label">Usuario</label> <input
+						class="form-control" name="username">
+				</div>
+
+				<div class="mb-3">
+					<label for="password" class="form-label">ContraseÃ±a</label> <input
+						type="password" class="form-control" name="password">
+				</div>
+
+				<div>
+					<button type="submit">Ingresar</button>
+				</div>
+			</form>
+
+		</main>
+	</div>
 </body>
 </html>

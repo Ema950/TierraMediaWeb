@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+h1{
+	color: white; 
+	font-family: "Gabriola";
+	font-size: 4em;
+	text-align: center;
+	text-shadow: 7px 4px 5px black;
+	background: rgba(0, 0, 0, 0.6); 
+}
+form{
+	background: rgba(255, 255, 255, 0.4); 
+	text-align: center;
+	font-size: 2em;
+	width: 25%;
+	height: 20%;
+	border-radius: 10px;
+	margin: auto;
+	border: 3px solid #000000;
+}
+button{
+	border: 1px solid #000000; 
+padding: 2px; /*espacio alrededor texto*/
+background-color: rgba(255, 255, 255, 0.4); /*color botón*/
+color: #000000; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+font-weight: bolder;
+border-radius: 20px; /*bordes redondos*/
+}

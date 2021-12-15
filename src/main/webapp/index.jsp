@@ -13,8 +13,8 @@ body {
 	</h1>
 
 	<form action="index" method="get">
-		Ingresar Usuario que desea procesar <br> <input name="nombre">
-		<br> <input type="submit" value="Aceptar">
+		Ingresar Usuario que desea procesar <br> <input class= "ingreso" name="nombre">
+		<br> <input class="aceptar" type="submit" value="Aceptar">
 
 	</form>
 

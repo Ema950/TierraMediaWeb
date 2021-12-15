@@ -118,7 +118,6 @@ public class UsuarioDao implements GenericDao<Usuario> {
 	}
 
 	private Usuario toUsuario(ResultSet resultados) throws SQLException {
-		
 		return new Usuario(resultados.getString(2), findNombreAtraccion(resultados.getInt(3)) ,
 				resultados.getInt(4), resultados.getDouble(5), resultados.getString(6));
 	}

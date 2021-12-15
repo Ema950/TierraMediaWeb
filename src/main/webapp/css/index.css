@@ -13,15 +13,31 @@ h1{
 	background: rgba(0, 0, 0, 0.6); 
 	
 }
-h2{
-	background: rgba(255, 255, 255, 0.6); 
+form{
+	background: rgba(255, 255, 255, 0.4); 
 	text-align: center;
 	font-size: 2em;
-	width: 16%;
+	width: 25%;
+	height: 20%;
 	border-radius: 10px;
 	margin: auto;
+	border: 3px solid #000000;
 }
+.ingreso{
+	border-radius: 10px;
+}
+.aceptar{
+	border: 1px solid #000000; 
+padding: 2px; /*espacio alrededor texto*/
+background-color: rgba(255, 255, 255, 0.4); /*color botón*/
+color: #000000; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+font-weight: bolder;
+border-radius: 20px; /*bordes redondos*/
 
+}
 div {
 	background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210423/pngtree-rustic-textured-paper-vintage-background-image_658219.jpg);
 	width: 52%;
